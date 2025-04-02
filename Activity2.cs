@@ -3,13 +3,9 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("grading sa studintz \n");
-        int[] student1 = { 87, 76, 89 };
-        int[] student2 = { 90, 89, 99 };
-        int[] student3 = { 100, 98, 98 };
-        int[] student4 = { 89, 98, 87 };
-        int[] student5 = { 88, 89, 90 };
-
-        Console.Write("student 1: ");
+        int[] student1 = { 87, 76, 89 }; int[] student2 = { 90, 89, 99 }; int[] student3 = { 100, 98, 98 }; int[] student4 = { 89, 98, 87 }; int[] student5 = { 88, 89, 90 };
+       
+       Console.Write("student 1: ");
         foreach (int grade in student1)
         {
             Console.Write(grade + " ");
@@ -46,60 +42,35 @@ class Program
 
         Console.WriteLine("Student average:\n");
 
-        double Studentaverage1 = Math.Round(student1.Average(), 2);
-        double Studentaverage2 = Math.Round(student2.Average(), 2);
-        double Studentaverage3 = Math.Round(student3.Average(), 2);
-        double Studentaverage4 = Math.Round(student4.Average(), 2);
-        double Studentaverage5 = Math.Round(student5.Average(), 2);
-
-        Console.WriteLine("student 1: " + Studentaverage1);
-        Console.WriteLine("student 2: " + Studentaverage2);
-        Console.WriteLine("student 3: " + Studentaverage3);
-        Console.WriteLine("student 4: " + Studentaverage4);
-        Console.WriteLine("student 5: " + Studentaverage5 + "\n");
+        double Studentaverage1 = Math.Round(student1.Average(), 2); Console.WriteLine("student 1: " + Studentaverage1);
+        double Studentaverage2 = Math.Round(student2.Average(), 2); Console.WriteLine("student 2: " + Studentaverage2);
+        double Studentaverage3 = Math.Round(student3.Average(), 2); Console.WriteLine("student 3: " + Studentaverage3);
+        double Studentaverage4 = Math.Round(student4.Average(), 2); Console.WriteLine("student 4: " + Studentaverage4);
+        double Studentaverage5 = Math.Round(student5.Average(), 2); Console.WriteLine("student 5: " + Studentaverage5 + "\n");
 
         Console.WriteLine("highest grades for every student");
 
-        int Hiscore1 = student1.Max();
-        int Hiscore2 = student2.Max();
-        int Hiscore3 = student3.Max();
-        int Hiscore4 = student4.Max();
-        int Hiscore5 = student5.Max();
-
-        Console.WriteLine("student 1: " + Hiscore1);
-        Console.WriteLine("student 2: " + Hiscore2);
-        Console.WriteLine("student 3: " + Hiscore3);
-        Console.WriteLine("student 4: " + Hiscore4);
-        Console.WriteLine("student 5: " + Hiscore5);
+        int Hiscore1 = student1.Max(); Console.WriteLine("student 1: " + Hiscore1);
+        int Hiscore2 = student2.Max(); Console.WriteLine("student 2: " + Hiscore2);
+        int Hiscore3 = student3.Max(); Console.WriteLine("student 3: " + Hiscore3);
+        int Hiscore4 = student4.Max(); Console.WriteLine("student 4: " + Hiscore4);
+        int Hiscore5 = student5.Max(); Console.WriteLine("student 5: " + Hiscore5 +"\n");
 
         Console.WriteLine("Lowest scores\n");
 
-        int Low1=student1.Min();
-        int Low2=student2.Min();
-        int Low3=student3.Min();
-        int Low4=student4.Min();
-        int Low5=student5.Min();
-
-        Console.WriteLine("Student 1: "+ Low1);
-        Console.WriteLine("Student 2: "+ Low2);
-        Console.WriteLine("Student 3: "+ Low3);
-        Console.WriteLine("Student 4: "+ Low4);
-        Console.WriteLine("Student 5: "+ Low5 + "\n");
+        int Low1 = student1.Min(); Console.WriteLine("Student 1: " + Low1);
+        int Low2 = student2.Min(); Console.WriteLine("Student 2: " + Low2);
+        int Low3 = student3.Min(); Console.WriteLine("Student 3: " + Low3);
+        int Low4 = student4.Min(); Console.WriteLine("Student 4: " + Low4);
+        int Low5 = student5.Min(); Console.WriteLine("Student 5: " + Low5 + "\n");
 
         Console.WriteLine("median of students\n");
 
-        Array.Sort(student1);
-        Array.Sort(student2);
-        Array.Sort(student3);
-        Array.Sort(student4);
-        Array.Sort(student5);
+        Array.Sort(student1); Console.WriteLine("Student 1: " + student1[1]);
+        Array.Sort(student2); Console.WriteLine("Student 2: " + student2[1]);
+        Array.Sort(student3); Console.WriteLine("Student 3: " + student3[1]);
+        Array.Sort(student4); Console.WriteLine("Student 4: " + student4[1]);
+        Array.Sort(student5); Console.WriteLine("Student 5: " + student5[1]);
 
-
-        Console.WriteLine("Student 1: " + student1[1]);
-        Console.WriteLine("Student 2: " + student2[1]);
-        Console.WriteLine("Student 3: " + student3[1]);
-        Console.WriteLine("Student 4: " + student4[1]);
-        Console.WriteLine("Student 5: " + student5[1]);
     }
 }
-
