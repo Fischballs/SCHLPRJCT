@@ -66,10 +66,40 @@ class Program
         int Hiscore4 = student4.Max();
         int Hiscore5 = student5.Max();
 
-        Console.WriteLine("student 1: "+ Hiscore1);
-        Console.WriteLine("student 2: "+ Hiscore2);
-        Console.WriteLine("student 3: "+ Hiscore3);
-        Console.WriteLine("student 4: "+ Hiscore4);
-        Console.WriteLine("student 5: "+ Hiscore5);
+        Console.WriteLine("student 1: " + Hiscore1);
+        Console.WriteLine("student 2: " + Hiscore2);
+        Console.WriteLine("student 3: " + Hiscore3);
+        Console.WriteLine("student 4: " + Hiscore4);
+        Console.WriteLine("student 5: " + Hiscore5);
+
+        Console.WriteLine("Lowest scores\n");
+
+        int Low1=student1.Min();
+        int Low2=student2.Min();
+        int Low3=student3.Min();
+        int Low4=student4.Min();
+        int Low5=student5.Min();
+
+        Console.WriteLine("Student 1: "+ Low1);
+        Console.WriteLine("Student 2: "+ Low2);
+        Console.WriteLine("Student 3: "+ Low3);
+        Console.WriteLine("Student 4: "+ Low4);
+        Console.WriteLine("Student 5: "+ Low5 + "\n");
+
+        Console.WriteLine("median of students\n");
+
+        Array.Sort(student1);
+        Array.Sort(student2);
+        Array.Sort(student3);
+        Array.Sort(student4);
+        Array.Sort(student5);
+
+
+        Console.WriteLine("Student 1: " + student1[1]);
+        Console.WriteLine("Student 2: " + student2[1]);
+        Console.WriteLine("Student 3: " + student3[1]);
+        Console.WriteLine("Student 4: " + student4[1]);
+        Console.WriteLine("Student 5: " + student5[1]);
     }
 }
+
